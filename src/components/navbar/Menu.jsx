@@ -1,23 +1,35 @@
-// import OjoTribal from '../../assets/ojotribal.png'
+import "./menu.css";
+import OjoTribal from "../../assets/images/Iconos/ojo_tribal.png";
 
-export default function Menu() {
+export default function Menu(args) {
+  
+  const claseBase = "boton_menu boton_categoria ";
   return (
     <div className="menu">
-        <button id="todos" className="boton_menu boton_categoria active">
-        {/*  <img src={OjoTribal} /> */}
-          Todos los productos
-          <img src="./images/Iconos/ojo tribal.png" />
-        </button>
-        <button id="pulseras" className="boton_menu boton_categoria">
-          <img src="./images/Iconos/ojo tribal.png" />
-          Pulseras
-          <img src="./images/Iconos/ojo tribal.png" />
-        </button>
-        <button id="collares" className="boton_menu boton_categoria">
-          <img src="./images/Iconos/ojo tribal.png" />
-          Collares
-          <img src="./images/Iconos/ojo tribal.png" />
-        </button>
-      </div>
-  )
+      <button
+        className={args.idBotonActivo === 1 ? claseBase + "active" : claseBase}
+        onClick={() => args.setIdBotonActivo(1)}
+      >
+        <img src={OjoTribal} />
+        Todos los productos
+        <img src={OjoTribal} />
+      </button>
+      <button
+        className={args.idBotonActivo === 2 ? claseBase + "active" : claseBase}
+        onClick={() => args.setIdBotonActivo(2)}
+      >
+        <img src={OjoTribal} />
+        Pulseras
+        <img src={OjoTribal} />
+      </button>
+      <button
+        className={args.idBotonActivo === 3 ? claseBase + "active" : claseBase}
+        onClick={() => args.setIdBotonActivo(3)}
+      >
+        <img src={OjoTribal} />
+        Collares
+        <img src={OjoTribal} />
+      </button>
+    </div>
+  );
 }

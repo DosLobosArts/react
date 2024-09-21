@@ -1,0 +1,50 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 58, 53);
+    list-style-type: none;
+    font-family: Dry;
+  }
+  
+  .boton_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Dry;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  
+  .boton_menu img {
+    visibility: hidden;
+    height: 20px;
+    width: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .boton_menu.active{
+    transition: .2s, color .2s;
+    background-color: lightgray;
+    color: black;
+  }
+  .boton_menu.active img{
+    filter: invert(1); /* Invierte los colores de la imagen */
+    visibility: visible;
+  }
+  
+  .boton_carrito{
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .numero_compras{
+    background-color: lightgray;
+    color: black;
+    padding: .35rem .35rem;
+    border-radius: .25rem;
+  }

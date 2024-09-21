@@ -3,12 +3,12 @@ import Menu from './Menu'
 import Contacto from './Contacto'
 import './navbar.css'
 
-export default function Navbar() {
+export default function Navbar(args) {
   return (
     <>
     <nav className="navbar">
       <Title/>
-      <Menu/>
+      <Menu idBotonActivo={args.idBotonActivo} setIdBotonActivo={args.setIdBotonActivo}/>
       <Contacto/>
     </nav>
     </>

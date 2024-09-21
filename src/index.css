@@ -1,26 +1,26 @@
 @font-face {
   font-family: AbsoluteEmpire;
-  src: url("./fonts/aAbsoluteEmpire.ttf");
+  src: url("./assets/fonts/aAbsoluteEmpire.ttf");
 }
 @font-face {
   font-family: Remingtoned;
-  src: url("./fonts/Remingtoned\ Type.ttf");
+  src: url("./assets/fonts/Remingtoned Type.ttf");
 }
 @font-face {
   font-family: Elegant;
-  src: url("./fonts/ELEGANT\ TYPEWRITER\ Regular.ttf");
+  src: url("./assets/fonts/ELEGANT TYPEWRITER Regular.ttf");
 }
 @font-face {
   font-family: Ocean;
-  src: url("./fonts/Oceanside\ Typewriter.ttf");
+  src: url("./assets/fonts/Oceanside Typewriter.ttf");
 }
 @font-face {
   font-family: Dry;
-  src: url("./fonts/JMH\ Typewriter\ dry.otf");
+  src: url("./assets/fonts/JMH Typewriter dry.otf");
 }
 @font-face {
   font-family: Modern;
-  src: url("./fonts/MODERN\ TYPEWRITER.ttf");
+  src: url("./assets/fonts/MODERN TYPEWRITER.ttf");
 }
 * {
   box-sizing: border-box;
@@ -61,58 +61,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.menu{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(61, 58, 53);
-  list-style-type: none;
-  gap: 1rem;
-  font-family: dry;
-}
-
-.boton_menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  background-color: transparent;
-  border: 0;
-  color: white;
-  font-size: 1.2rem;
-  font-family: Dry;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-.boton_menu img {
-  visibility: hidden;
-  height: 20px;
-  width: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.boton_menu.active{
-  transition: .2s, color .2s;
-  background-color: lightgray;
-  color: black;
-}
-.boton_menu.active img{
-  filter: invert(1); /* Invierte los colores de la imagen */
-  visibility: visible;
-}
-
-.boton_carrito{
-  margin-top: 2rem;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.numero_compras{
-  background-color: lightgray;
-  color: black;
-  padding: .35rem .35rem;
-  border-radius: .25rem;
 }
 
 /** PRODUCTOS **/
