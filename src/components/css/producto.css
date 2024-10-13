@@ -1,0 +1,56 @@
+/** PRODUCTOS **/
+
+.producto{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .producto p{
+    font-family: Ocean;
+    font-size: 25px;
+  }
+  
+  .productos_titulo{
+    margin-bottom: 2rem;
+  }
+  
+  .producto_imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .producto_info{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: Dry;
+    padding: 1rem;
+    padding-top: 0;
+    background-image: url(./textures/textura-products-1.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    margin-top: -1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .producto_info h3{
+    height: 70px;
+    margin-bottom: 0;
+  }
+  
+  .producto_agregar{
+    font-family: Dry;
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color, .2s, color .2s;
+  }
+  .producto_agregar:hover{
+    background-color: black;
+    color: white;
+  }
+  

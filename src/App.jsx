@@ -1,14 +1,15 @@
 import Navbar from './components/navbar/Navbar'
-import Productos from './components/main/Productos'
-import './App.css'
+import Productos from './components/main/Contenedor_productos'
+import './components/css/app.css'
 import { useState } from 'react'
+import Contenedor_productos from './components/main/Contenedor_productos'
 
 export default function App() {
-  const [idBotonActivo, setIdBotonActivo] = useState(1)
+  const [idBotonActivo, setIdBotonActivo] = useState(0)
   return (
     <>
     <Navbar idBotonActivo={idBotonActivo} setIdBotonActivo={setIdBotonActivo}/>
-    <Productos /*lista={productos}*/ idBotonActivo={idBotonActivo}/> 
+    <Contenedor_productos idBotonActivo={idBotonActivo}/>
     </>
   )
 }

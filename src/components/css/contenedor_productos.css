@@ -1,0 +1,12 @@
+.main {
+  margin-left: 400px;
+  background-color: red;
+  color: black;
+  overflow: auto; /* Permite que el contenido principal haga scroll si es necesario */
+}
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+  }
