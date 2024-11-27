@@ -7,16 +7,9 @@ const categorias = ["Todos los productos", "Pulseras", "Collares"]
 export default function Contenedor_productos(args) {
   return (
 
-    <div class='main'>
+    <div class='main_productos'>
       <h1>{categorias[args.idBotonActivo]}</h1>
       <div class='contenedor_productos'>
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
-        <Producto />
         <Producto />
       </div>
     </div>
