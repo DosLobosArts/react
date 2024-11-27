@@ -1,8 +1,11 @@
 .main_productos {
-  margin-left: 400px;
+  position: relative;
+  transform: translateX(400px);
   height: 100%;
-  size: 100%;
-  background-color: red;
+  width: calc(100vw - 400px);
+  padding: 45px;
+  padding-top: 0;
+  background-color: rgb(175, 175, 175);
   color: black;
   overflow: auto; /* Permite que el contenido principal haga scroll si es necesario */
 }
@@ -12,7 +15,3 @@
     gap: 1rem;
     padding: 0.5rem;
   }
-
-.main_productos h1{
-  padding-left: 20px;
-}

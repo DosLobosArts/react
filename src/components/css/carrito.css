@@ -1,10 +1,11 @@
 .main_carrito {
-  padding: 20px;
+  position: relative;
+  left: 400px;
+  padding: 45px;
   padding-top: 0;
-  margin-left: 400px;
   height: 100%;
-  size: 100%;
-  background-color: red;
+  width: calc(100vw - 400px); /* Esto fue clave */
+  background-color: rgb(175, 175, 175);
   color: black;
   overflow: auto; /* Permite que el contenido principal haga scroll si es necesario */
 }
@@ -16,12 +17,20 @@
 }
 
 .carrito_producto {
-  background-color: rgb(171, 170, 171);
+  background-color: rgb(139, 139, 139);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 1rem;
+}
+
+.carrito_producto img{
+  border-radius: 1rem;
+  height: 100px;
+  width: auto;
 }
 
 .carrito_producto div {
@@ -43,6 +52,10 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+.carrito_producto_eliminar button img {
+  height: 50px;
+  width: 50px;
 }
 .carrito_acciones {
   padding: 0.5rem;

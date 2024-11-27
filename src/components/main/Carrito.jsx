@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/carrito.css";
+import Imagen from '../../assets/images/Pulseritas/pulse 1 ojito ovalado roja.jpg'
+import Trashcan from '../../assets/images/Iconos/Trashcan.png'
 
 export default function Carrito() {
   return (
@@ -11,7 +13,7 @@ export default function Carrito() {
         <div class="carrito_producto">
           <div>
             <small>Imagen</small>
-            <img alt="imagen" />
+            <img src={Imagen} />
           </div>
           <div>
             <small>Nombre</small>
@@ -22,7 +24,7 @@ export default function Carrito() {
             <h3>1</h3>
           </div>
           <div class="carrito_producto_precio">
-            <small>Precio</small>
+            <small>Precio Unitario</small>
             <h3>$1000</h3>
           </div>
           <div class="carrito_producto_subtotal">
@@ -30,7 +32,9 @@ export default function Carrito() {
             <h3>$1000</h3>
           </div>
           <div class="carrito_producto_eliminar">
-            <button>(Trashcan)</button>
+            <button>
+              <img src={Trashcan}/>
+            </button>
           </div>
         </div>
 
@@ -50,3 +54,9 @@ export default function Carrito() {
     </div>
   );
 }
+
+/*TO DO:
+
+Meter al costado un form para que llegue la direccion y datos del chabon. (Código postal, etc)
+
+*/

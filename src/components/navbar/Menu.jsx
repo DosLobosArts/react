@@ -30,6 +30,14 @@ export default function Menu(args) {
         Collares
         <img src={OjoTribal} />
       </button>
+      <button
+        className={args.idBotonActivo === 3 ? claseBase + "active" : claseBase}
+        onClick={() => args.setIdBotonActivo(3)}
+      >
+        <img src={OjoTribal} />
+        Carrito
+        <img src={OjoTribal} />
+      </button>
     </div>
   );
 }

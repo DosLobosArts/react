@@ -1,11 +1,12 @@
 import React from 'react'
 import '../css/producto.css'
+import Pulserita from "../../assets/images/Pulseritas/pulse 1 ojito ovalado roja.jpg";
 
 
 export default function Producto() {
   return (
         <div class="producto">
-            <img class="producto_imagen" src="./images/Hilo finito 7 nudos ojo violeta 10.jpg"/> 
+            <img src={Pulserita} />
                 <div class="producto_info">
                     <h3>Nombre</h3>
                     <p>$Precio</p>

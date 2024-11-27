@@ -10,7 +10,11 @@ export default function App() {
   return (
     <>
     <Navbar idBotonActivo={idBotonActivo} setIdBotonActivo={setIdBotonActivo}/>
-    <Carrito/>
+    {idBotonActivo === 3 ? (
+        <Carrito />
+      ) : (
+        <Contenedor_productos idBotonActivo={idBotonActivo} />
+      )}
     </>
   )
 }
