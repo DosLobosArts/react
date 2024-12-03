@@ -1,62 +1,68 @@
+/*Main y titulos*/
+
 .main_carrito {
   position: relative;
   left: 400px;
   padding: 45px;
   padding-top: 0;
   height: 100%;
-  width: calc(100vw - 400px); /* Esto fue clave */
+  width: calc(100vw - 400px); /* Esto fue clave. Restarle la distancia que lo movi con el left */
   background-color: rgb(175, 175, 175);
-  color: black;
-  overflow: auto; /* Permite que el contenido principal haga scroll si es necesario */
+  color: rgb(255, 255, 255);
+  overflow: auto; /* Scrollear si es necesario */
 }
+
+.carrito_titulo, .carrito_vacio{
+  color: black;
+}
+
+/*PRODUCTOS CARRITO*/
 
 .carrito_productos {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: column; 
+  gap: 1rem; 
+  padding: 1rem; 
+  background-color: grey;
+  border-radius: 0.5rem;
 }
 
 .carrito_producto {
-  background-color: rgb(139, 139, 139);
-  display: flex;
-  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: rgb(32, 32, 32);
+}
+
+.encabezados_carrito, .detalles_carrito {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Seis columnas iguales */
+  text-align: center; /* Centrar el texto en cada celda */
+}
+
+.detalles_carrito {
   align-items: center;
-  padding: 0.5rem;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 1rem;
+  width: 100%;
+  font-family: Dry;
 }
 
-.carrito_producto img{
+.encabezados_carrito small {
+  font-weight: bold;
+  font-family: Dry;
+}
+
+.detalles_carrito img {
   border-radius: 1rem;
-  height: 100px;
+  height: 70px;
   width: auto;
+  max-width: 100%;
 }
 
-.carrito_producto div {
-    display: flex;
-    flex-direction: column;
-}
-
-.carrito_producto small {
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: Dry;
-}
-.carrito_producto h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: Dry;
-}
-.carrito_producto_eliminar button {
-  border: 0;
-  background-color: transparent;
+button {
+  background: none;
+  border: none;
   cursor: pointer;
 }
-.carrito_producto_eliminar button img {
-  height: 50px;
-  width: 50px;
-}
+
+/*CARRITO ACCIONES*/
 .carrito_acciones {
   padding: 0.5rem;
   display: flex;
@@ -64,6 +70,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: brown;
+  border-radius: 0.5rem;
 }
 .carrito_acciones_derecha {
   display: flex;
@@ -93,7 +100,7 @@
   padding: 1rem;
   border: 0;
   color: white;
-  background-color: rgb(33, 31, 31);
+  background-color: rgb(32, 32, 32);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   font-family: Dry;

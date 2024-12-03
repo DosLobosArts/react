@@ -1,26 +1,28 @@
 import React from 'react'
-import Producto from './Producto'
+import Producto_galeria from './Producto_galeria'
 import '../css/contenedor_productos.css'
 
 const categorias = ["Todos los productos", "Pulseras", "Collares", "Carrito"] /* "Carrito" */ 
 
-export default function Contenedor_productos(args) {
+export default function Galeria(args) {
   return (
       <div className={args.idBotonActivo === 3 ? "main_productos hidden" : "main_productos active"}>
         <h1>{categorias[args.idBotonActivo]}</h1>
         <div class='contenedor_productos'>
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
-          <Producto />
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
+        <Producto_galeria/>
         </div>
       </div>
   )

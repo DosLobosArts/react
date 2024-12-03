@@ -1,9 +1,9 @@
 import Navbar from './components/navbar/Navbar'
-import Productos from './components/main/Contenedor_productos'
+import Productos from './components/main/Galeria'
 import Carrito from './components/main/Carrito'
 import './components/css/app.css'
 import { useState } from 'react'
-import Contenedor_productos from './components/main/Contenedor_productos'
+import Galeria from './components/main/Galeria'
 
 export default function App() {
   const [idBotonActivo, setIdBotonActivo] = useState(0)
@@ -13,7 +13,7 @@ export default function App() {
     {idBotonActivo === 3 ? (
         <Carrito />
       ) : (
-        <Contenedor_productos idBotonActivo={idBotonActivo} />
+        <Galeria idBotonActivo={idBotonActivo} />
       )}
     </>
   )

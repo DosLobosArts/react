@@ -3,7 +3,7 @@ import '../css/producto.css'
 import Pulserita from "../../assets/images/Pulseritas/pulse 1 ojito ovalado roja.jpg";
 
 
-export default function Producto() {
+export default function Producto_galeria() {
   return (
         <div class="producto">
             <img src={Pulserita} />
