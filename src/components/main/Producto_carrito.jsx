@@ -1,6 +1,6 @@
 import React from 'react'
 import Imagen from "../../assets/images/Pulseritas/pulse 1 ojito ovalado roja.jpg";
-import Trashcan from "../../assets/images/Iconos/Trashcan.png";
+import Trashcan from "../../assets/images/Iconos/Trashcan_white.png";
 
 export default function Producto_carrito() {
   return (
@@ -22,7 +22,6 @@ export default function Producto_carrito() {
               <small>Subtotal</small>
             </div>
             <div>
-              <small>Eliminar</small>
             </div>
           </div>
 

@@ -1,6 +1,16 @@
+/*Separaciones*/
+
+.linea_vertical {
+  width: 1px;      /* Ocupa toda la anchura disponible */
+  height: 100%;      /* Define la altura como una línea delgada */
+  background-color: rgb(80, 80, 80); /* Color de la línea */
+  padding-left: 3px;
+  margin-left: 25px;
+}
+
 /*Main y titulos*/
 
-.main_carrito {
+.carrito {
   position: relative;
   left: 400px;
   padding: 45px;
@@ -14,6 +24,119 @@
 
 .carrito_titulo, .carrito_vacio{
   color: black;
+}
+
+.main_carrito {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/*LISTA COMPRADOS*/
+
+.lista_comprados {
+  height: 750px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: auto;
+  display: grid;
+  grid-template-columns: 10fr 0.1fr;
+}
+
+/* Personalizar la barra de desplazamiento */
+.lista_comprados::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+}
+
+/* Thumb (deslizador) */
+.lista_comprados::-webkit-scrollbar-thumb {
+  background: #303030;        /* Color del deslizador */
+  border-radius: 4px;      /* Bordes redondeados */
+}
+
+/* Hover en el deslizador */
+.lista_comprados::-webkit-scrollbar-thumb:hover {
+  background: #131313;        /* Color más oscuro al pasar el mouse */
+}
+
+/*SECCION PEDIDO*/
+
+.seccion_pedido {
+  font-weight: bold;
+  font-family: Dry;
+  margin: 10px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  height: 600px;
+  width: auto;
+}
+
+.pedido_data {
+  display: grid;
+  color: black;
+}
+
+.pedido_data p {
+  position: relative;
+  padding-left: 20px;
+}
+
+.pedido_data form {
+  gap: 7px;
+  display: grid;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.pedido_data input {
+  outline: none;
+}
+
+.pedido_data form button{
+  cursor: pointer;
+  padding: 1rem;
+  border: 0;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  border-radius: 1rem;
+  font-family: Dry;
+  font-size: 1rem;
+}
+
+.carrito_acciones_comprar {
+  cursor: pointer;
+  padding: 1rem;
+  border: 0;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: Dry;
+  font-size: 1rem;
+}
+
+.pedido_data h1 {
+  font-family: Ocean;
+  font-weight: 2000;
+  margin: 0;
+  justify-self: center;
+  color: black;
+}
+
+.pedido_data img{
+  height: 20px;
+  width: auto;
+}
+
+.pedido_data_titulo{
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*PRODUCTOS CARRITO*/
@@ -56,20 +179,26 @@
   max-width: 100%;
 }
 
-button {
+.detalles_carrito button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
+.detalles_carrito button img {
+  position: relative;
+  height: 30px;
+  bottom: 8px;
+}
+
 /*CARRITO ACCIONES*/
 .carrito_acciones {
   padding: 0.5rem;
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: brown;
   border-radius: 0.5rem;
 }
 .carrito_acciones_derecha {
@@ -85,7 +214,7 @@ button {
   font-size: 1rem;
 }
 .carrito_acciones_total {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;

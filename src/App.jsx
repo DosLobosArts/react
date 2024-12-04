@@ -29,6 +29,7 @@ volver a agregar el Contenedor_productos al app! (estoy probando carrito)
 TO DO LIST:
 
 Productos
-1. crear componente Producto e iterarlo en Productos / done
-2. que se actualice el main con productos de cada categoria a base del arg idBotonActivo / done?
+- que se actualice el main con productos de cada categoria a base del arg idBotonActivo
+- pensar alguna funcion que evalue la distancia y cotice el envio por correo argentino
+- que la barrita del overflow de lista_comprados de Carrito detecte cuando hay overflow con Javascript para ponerle un fondito blanco a la barra. 
 */ 
